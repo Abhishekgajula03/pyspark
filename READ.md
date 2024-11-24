@@ -11,22 +11,8 @@ What is Pandas?
 Pandas is a Python library used for data manipulation and analysis. It works best for handling smaller datasets that fit into memory.
 
 Key Features of Pandas:
-In-Memory Operations: Efficiently handles small to moderately large datasets directly in memory.
-Rich Data Structures: Provides powerful data structures like DataFrame and Series.
-Flexible and Intuitive: Great for preprocessing, cleaning, and exploratory data analysis (EDA).
-Single Node Execution: All operations are performed on a single machine (non-distributed).
-Differences Between PySpark and Pandas
-Feature	PySpark	Pandas
-Primary Use Case	Big data processing (distributed).	Small to medium data manipulation (single machine).
-Data Size	Handles datasets that exceed memory (terabytes or more).	Handles datasets that fit in memory (up to a few GBs).
-Execution	Distributed across a cluster of machines.	Runs on a single node (your local machine).
-DataFrame Operations	Similar to SQL; designed for parallel processing.	More flexible, supports custom Python functions.
-Performance	Optimized for large datasets via in-memory and parallel execution.	Optimized for in-memory operations, not suitable for large datasets.
-Fault Tolerance	Resilient Distributed Datasets (RDDs) ensure fault tolerance.	No fault tolerance; an operation failure can crash the process.
-Learning Curve	Higher, due to distributed nature and Spark-specific concepts.	Easier to learn for beginners in data analysis.
-Libraries	Built-in support for machine learning, SQL, and streaming.	Focused on data analysis and manipulation.
-Setup	Requires installation of Spark and a cluster setup for scaling.	No additional setup; lightweight and runs on Python.
-Integration	Can integrate with Hadoop, HDFS, and other big data ecosystems.	Typically used with other Python libraries like NumPy, Matplotlib.
+![Screenshot 2024-11-24 212842](https://github.com/user-attachments/assets/7d92e9b9-083a-436c-b58a-80c65d471dd4)
+
 When to Use PySpark vs. Pandas
 Use PySpark When:
 Working with large datasets that don't fit into memory.
@@ -41,7 +27,6 @@ Needing an easy-to-use library with a lower learning curve.
 Practical Example
 Pandas Code Example:
 python
-Copy code
 import pandas as pd
 
 # Create a DataFrame
